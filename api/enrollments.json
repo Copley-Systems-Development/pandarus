@@ -27,6 +27,17 @@
             },
             {
               "paramType": "query",
+              "name": "student_ids",
+              "description": "pass student_ids[]=all to get permissions on user enrollments",
+              "type": "array",
+              "format": null,
+              "required": false,
+              "items": {
+                "type": "string"
+              }
+            },
+            {
+              "paramType": "query",
               "name": "type",
               "description": "A list of enrollment types to return. Accepted values are 'StudentEnrollment', 'TeacherEnrollment', 'TaEnrollment', 'DesignerEnrollment', and 'ObserverEnrollment.' If omitted, all enrollment types are returned. This argument is ignored if `role` is given.",
               "type": "array",
